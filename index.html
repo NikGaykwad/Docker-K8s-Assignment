@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.5.5/dist/lottie-player.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('bg-gray-900');
+            document.body.classList.toggle('bg-white');
+            document.body.classList.toggle('text-white');
+        }
+    </script>
+    <style>
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="relative text-center py-6 bg-gradient-to-r from-purple-600 to-blue-500 shadow-lg">
+        <h1 class="text-4xl font-bold animate-bounce">DevOps Learning Hub</h1>
+        <p class="text-gray-200">Your one-stop solution for DevOps study materials & resources</p>
+        <button onclick="toggleDarkMode()" class="absolute top-4 right-4 text-white text-2xl">🌙</button>
+    </header>
+
+    <!-- Section with Lottie Animation & Icons -->
+    <section class="container mx-auto text-center py-10 flex flex-col items-center">
+        <div class="flex flex-col items-center space-y-4">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tfb3estd.json" 
+                background="transparent" speed="1" 
+                style="width: 250px; height: 250px;" 
+                loop autoplay>
+            </lottie-player>
+
+            <div class="flex space-x-6 justify-center mt-4">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker" class="w-12 pulse">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" class="w-12 pulse">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="Jenkins" class="w-12 pulse">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="w-12 pulse">
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Resources Section -->
+    <section class="container mx-auto text-center py-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="https://www.geeksforgeeks.org/basic-linux-commands/" target="_blank" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Linux</a>
+            <a href="https://www.geeksforgeeks.org/useful-github-commands/" target="_blank" class="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Git & GitHub</a>
+            <a href="https://www.geeksforgeeks.org/docker-instruction-commands/" target="_blank" class="px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Docker</a>
+            <a href="https://www.geeksforgeeks.org/aws-tutorial/" target="_blank" class="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">AWS</a>
+            <a href="https://www.jenkins.io/doc/" target="_blank" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Jenkins</a>
+            <a href="https://kubernetes.io/docs/home/" target="_blank" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Kubernetes</a>
+            <a href="https://developer.hashicorp.com/terraform/tutorials" target="_blank" class="px-6 py-3 bg-gray-700 hover:bg-gray-800 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Terraform</a>
+            <a href="https://docs.ansible.com/ansible/latest/" target="_blank" class="px-6 py-3 bg-orange-600 hover:bg-orange-700 rounded-lg shadow-lg text-lg font-semibold transition-transform transform hover:scale-110">Ansible</a>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-gradient-to-r from-purple-600 to-blue-500 mt-10">
+        <p class="text-gray-200">&copy; 2025 DevOps Learning Hub | Built with ❤️ by Vaishnavi</p>
+    </footer>
+</body>
+</html>
