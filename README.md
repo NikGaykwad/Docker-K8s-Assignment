@@ -237,3 +237,5 @@ This process ensures that your Docker image is accessible from Kubernetes withou
 ---
 
 **Note**: Always replace `your-dockerhub-username` with your actual Docker Hub username throughout the commands.
+
+My File : [Docker and Kubernetes Mini Assignment .pdf](https://github.com/user-attachments/files/19864246/Docker.and.Kubernetes.Mini.Assignment.pdf)
